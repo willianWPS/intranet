@@ -55,17 +55,17 @@ nav{
         border-radius: 100%;
     }
     
-    header .coluna-direita{
+    header .{
         text-align: left;
     }
-    main .coluna section{
+    main . section{
         /* border: 2px solid #d4e9ff; */
         border: 2px solid transparent;
         padding: 20px;
         position: relative;
     }
  /*CONFIGURAÇÕES GENERICAS PARA TOPO-DIRETA E BAIXO-ESQUERDA, IRAO SE ENQUADRAR NOS DESENHOS DAS LINHAS DE CADA SPAN DA SECTION*/
-    main .coluna section span{
+    main . section span{
         position: absolute;/*FICA FLUTUANDO A POSICÇÃO DA LINHA DE CADA SEÇÃO DO SPAN*/
         display: block;
         width: 0;/*AS LINHAS NÃO VAO DESENHAR ASSIM QUE A PAGINA ABRIR, ELAS TERAO UM DELAY AO QUAL SERAO DEFINADAS EM CADA SEÇÃO*/
@@ -73,7 +73,7 @@ nav{
         border: 2px solid transparent; /**/
     }
     /*ANIMAÇÕES DAS BORDAS DE CADA SEÇÃO*/
-    main .coluna section .topo-direita{ /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
+    main . section .{ /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
         top: -2px;
         left: -2px;
         animation-name: aumentarLargura, aumentarAltura; /*CHAMADA DAS FUNÇÕES DA ANIMAÇÃO*/
