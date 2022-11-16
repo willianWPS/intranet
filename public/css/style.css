@@ -50,22 +50,22 @@ nav{
     header{
         padding: 30px 0 0;
     }
-    header . img{
+    header {
         max-width: 250px;
         border-radius: 100%;
     }
     
-    header .{
+    header {
         text-align: left;
     }
-    main . section{
+    main {
         /* border: 2px solid #d4e9ff; */
         border: 2px solid transparent;
         padding: 20px;
         position: relative;
     }
  /*CONFIGURAÇÕES GENERICAS PARA TOPO-DIRETA E BAIXO-ESQUERDA, IRAO SE ENQUADRAR NOS DESENHOS DAS LINHAS DE CADA SPAN DA SECTION*/
-    main . section span{
+    main span{
         position: absolute;/*FICA FLUTUANDO A POSICÇÃO DA LINHA DE CADA SEÇÃO DO SPAN*/
         display: block;
         width: 0;/*AS LINHAS NÃO VAO DESENHAR ASSIM QUE A PAGINA ABRIR, ELAS TERAO UM DELAY AO QUAL SERAO DEFINADAS EM CADA SEÇÃO*/
@@ -73,30 +73,28 @@ nav{
         border: 2px solid transparent; /**/
     }
     /*ANIMAÇÕES DAS BORDAS DE CADA SEÇÃO*/
-    main . section .{ /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
+    main { /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
         top: -2px;
         left: -2px;
         animation-name: aumentarLargura, aumentarAltura; /*CHAMADA DAS FUNÇÕES DA ANIMAÇÃO*/
         animation-duration: 1s, 1s; /*TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA*/
         animation-delay: 2s, 3s;/*DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA*/
         animation-fill-mode: forwards;/*DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO*/
-        border-top-color: rgb(174, 130, 0);
-        border-right-color: rgb(174, 130, 0);
+      
     }
-    main .coluna section .baixo-esquerda{  /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
+    main {  /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
         bottom: -2px;
         right: -2px;
         animation-name: aumentarLargura, aumentarAltura;/*CHAMADA DAS FUNÇÕES DA ANIMAÇÃO*/
         animation-duration: 1s, 1s;/*TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA*/
         animation-delay: 4s, 5s;/*DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA*/
         animation-fill-mode: forwards;/*DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO*/
-        border-bottom-color: rgb(174, 130, 0);
-        border-left-color: rgb(174, 130, 0);
+      
     }
-    main .coluna{
+    main {
         padding: 0;
     }
-    footer nav .redes-sociais li{
+    footer nav {
         margin: 0  14px;
         text-align: center;
         display: initial;
@@ -106,7 +104,7 @@ nav{
 
 @media only screen and (min-width: 991px){
 
-    header .class{
+    header .nav {
         flex-basis: 70%;
     }
 }
