@@ -1,0 +1,112 @@
+:root{
+    --cor-texto: #ffffff;
+    --cor-textonav: #FFFFFF;
+    --navbar-principal: rgb(24, 38, 47, 0.95);
+    --cor-de-fundo: #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto);
+    min-height: 100rem;
+}
+/****************NAVBAR***************/
+
+nav{
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    background: var(--navbar-principal);
+}
+.nav-list li a{
+    color: var(--cor-texto);
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Verdana', 'Arial Narrow', Arial, sans-serif;
+    line-height: 44px;
+    letter-spacing: 0.15em;    
+}
+.content_img, img{
+    display: absolute;
+    height: 6rem;
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    header{
+        padding: 30px 0 0;
+    }
+    header . img{
+        max-width: 250px;
+        border-radius: 100%;
+    }
+    
+    header .coluna-direita{
+        text-align: left;
+    }
+    main .coluna section{
+        /* border: 2px solid #d4e9ff; */
+        border: 2px solid transparent;
+        padding: 20px;
+        position: relative;
+    }
+ /*CONFIGURAÇÕES GENERICAS PARA TOPO-DIRETA E BAIXO-ESQUERDA, IRAO SE ENQUADRAR NOS DESENHOS DAS LINHAS DE CADA SPAN DA SECTION*/
+    main .coluna section span{
+        position: absolute;/*FICA FLUTUANDO A POSICÇÃO DA LINHA DE CADA SEÇÃO DO SPAN*/
+        display: block;
+        width: 0;/*AS LINHAS NÃO VAO DESENHAR ASSIM QUE A PAGINA ABRIR, ELAS TERAO UM DELAY AO QUAL SERAO DEFINADAS EM CADA SEÇÃO*/
+        height: 0;/*AS MESMA SE APLICAM PARA O TAMANHO ASSIM COMO A LARGURA, SERÃO DESENHADA APOS O DELAY DEFINIDO EM CADA SPAN*/
+        border: 2px solid transparent; /**/
+    }
+    /*ANIMAÇÕES DAS BORDAS DE CADA SEÇÃO*/
+    main .coluna section .topo-direita{ /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
+        top: -2px;
+        left: -2px;
+        animation-name: aumentarLargura, aumentarAltura; /*CHAMADA DAS FUNÇÕES DA ANIMAÇÃO*/
+        animation-duration: 1s, 1s; /*TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA*/
+        animation-delay: 2s, 3s;/*DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA*/
+        animation-fill-mode: forwards;/*DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO*/
+        border-top-color: rgb(174, 130, 0);
+        border-right-color: rgb(174, 130, 0);
+    }
+    main .coluna section .baixo-esquerda{  /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
+        bottom: -2px;
+        right: -2px;
+        animation-name: aumentarLargura, aumentarAltura;/*CHAMADA DAS FUNÇÕES DA ANIMAÇÃO*/
+        animation-duration: 1s, 1s;/*TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA*/
+        animation-delay: 4s, 5s;/*DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA*/
+        animation-fill-mode: forwards;/*DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO*/
+        border-bottom-color: rgb(174, 130, 0);
+        border-left-color: rgb(174, 130, 0);
+    }
+    main .coluna{
+        padding: 0;
+    }
+    footer nav .redes-sociais li{
+        margin: 0  14px;
+        text-align: center;
+        display: initial;
+    }
+    
+}
+
+@media only screen and (min-width: 991px){
+
+    header .class{
+        flex-basis: 70%;
+    }
+}
