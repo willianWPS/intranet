@@ -41,7 +41,7 @@ nav{
 
 
 
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
 
     nav {
         display: flex;
@@ -59,36 +59,36 @@ nav{
         text-align: left;
     }
     main {
-        /* border: 2px solid #d4e9ff; */
+        border: 2px solid #d4e9ff;
         border: 2px solid transparent;
         padding: 20px;
         position: relative;
-    }
+    } */
  /*CONFIGURAÇÕES GENERICAS PARA TOPO-DIRETA E BAIXO-ESQUERDA, IRAO SE ENQUADRAR NOS DESENHOS DAS LINHAS DE CADA SPAN DA SECTION*/
-    main span{
-        position: absolute;/*FICA FLUTUANDO A POSICÇÃO DA LINHA DE CADA SEÇÃO DO SPAN*/
+    /* main span{
+        position: absolute;FICA FLUTUANDO A POSICÇÃO DA LINHA DE CADA SEÇÃO DO SPAN
         display: block;
-        width: 0;/*AS LINHAS NÃO VAO DESENHAR ASSIM QUE A PAGINA ABRIR, ELAS TERAO UM DELAY AO QUAL SERAO DEFINADAS EM CADA SEÇÃO*/
-        height: 0;/*AS MESMA SE APLICAM PARA O TAMANHO ASSIM COMO A LARGURA, SERÃO DESENHADA APOS O DELAY DEFINIDO EM CADA SPAN*/
-        border: 2px solid transparent; /**/
-    }
+        width: 0;AS LINHAS NÃO VAO DESENHAR ASSIM QUE A PAGINA ABRIR, ELAS TERAO UM DELAY AO QUAL SERAO DEFINADAS EM CADA SEÇÃO
+        height: 0;AS MESMA SE APLICAM PARA O TAMANHO ASSIM COMO A LARGURA, SERÃO DESENHADA APOS O DELAY DEFINIDO EM CADA SPAN
+        border: 2px solid transparent; 
+    } */
     /*ANIMAÇÕES DAS BORDAS DE CADA SEÇÃO*/
-    main { /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
+    /* main { AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN
         top: -2px;
         left: -2px;
-        animation-name: aumentarLargura, aumentarAltura; /*CHAMADA DAS FUNÇÕES DA ANIMAÇÃO*/
-        animation-duration: 1s, 1s; /*TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA*/
-        animation-delay: 2s, 3s;/*DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA*/
-        animation-fill-mode: forwards;/*DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO*/
+        animation-name: aumentarLargura, aumentarAltura; CHAMADA DAS FUNÇÕES DA ANIMAÇÃO
+        animation-duration: 1s, 1s; TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA
+        animation-delay: 2s, 3s;DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA
+        animation-fill-mode: forwards;DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO
       
-    }
-    main {  /*AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN*/
+    } */
+    /* main {  AS LINHAS SAO DESENHAS SEPARADAMENTE POR CADA SECTION DA SPAN
         bottom: -2px;
         right: -2px;
-        animation-name: aumentarLargura, aumentarAltura;/*CHAMADA DAS FUNÇÕES DA ANIMAÇÃO*/
-        animation-duration: 1s, 1s;/*TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA*/
-        animation-delay: 4s, 5s;/*DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA*/
-        animation-fill-mode: forwards;/*DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO*/
+        animation-name: aumentarLargura, aumentarAltura;CHAMADA DAS FUNÇÕES DA ANIMAÇÃO
+        animation-duration: 1s, 1s;TEMPO DE EXECUSÃO DA ANIMAÇÃO, COM 2 ANIMAÇÃO RESPECTIVAMENTE COM A LARGURA E ALTURA
+        animation-delay: 4s, 5s;DELAY ENTRE AS DUAS ANIMAÇÃO RESPECTIVO COM ALTURA E LARGURA
+        animation-fill-mode: forwards;DESENHA AS BORDAS E MANTEM NA VISUALIZAÇÃO APOS A ANIMAÇÃO TER COMEÇADO
       
     }
     main {
@@ -100,11 +100,11 @@ nav{
         display: initial;
     }
     
-}
-
+} */
+/* 
 @media only screen and (min-width: 991px){
 
     header .nav {
         flex-basis: 70%;
     }
-}
+} */
