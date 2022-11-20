@@ -1,7 +1,8 @@
 :root{
-    --cor-texto: #ffffff;
+    --cor-texto: silver;
     --cor-textonav: #FFFFFF;
-    --navbar-principal: rgb(24, 38, 47, 0.95);
+    --navbar-principal: #18262ff2;
+    --navbar-lateral: #1B3F52;
     --cor-de-fundo: #FFFFFF;
 }
 *{
@@ -24,29 +25,59 @@ header{
     align-items: center;
     background: var(--navbar-principal);
 }
-.nav-list li a{
+.title{
+    text-align: center;
     color: var(--cor-texto);
     text-decoration: none;
-    
     font-weight: 500;
     font-size: 30px;
-    font-family: 'Verdana', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', '', Arial, sans-serif;
     line-height: 44px;
     letter-spacing: 0.15em;    
 }
 .content_img, img{
     display: absolute;
-    height: 2rem;
+    height: 2.5rem;
 }
-@media (min-width: 768px){
-    nav{
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-    }
+.content .sidebar{
+    position: fixed;
+    width: 13.125rem;
+    height: 100%;
+    background-color: var(--navbar-lateral);
+    padding: 1.875rem 0;
 }
+.content .sidebar h3{
+    color: var(--cor-textonav);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.875rem;
+}
+.content .sidebar ul li{
+    font-size: 16px;
+    padding: 0.938rem; 
+    border-bottom: 0.063rem solid rgba(240, 239, 239, 0.527);
+    border-top:  0.063rem solid rgba(240, 239, 239, 0.527);
+ }
+ .content .sidebar ul li a{
+     color: var(--text-color1);
+     display: block;
+ }
+ .content .sidebar ul li:hover{
+     background: var(--navbar-color2);
+ }
+ .content .sidebar ul li:hover a{
+     color: var(--navbar-icon-color);
+ }
 
+.rodape{
 
+    position: fixed;
+    width: 13.125rem;
+    height: 100%;
+    background-color: var(--navbar-lateral);
+    padding: 1.875rem 0;
+
+}
 /* @media only screen and (min-width: 768px){
     nav {
         display: flex;
